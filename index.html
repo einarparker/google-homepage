@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>Google Search</title>
-  <meta name="description" content="The HTML5 Herald">
+  
   <meta name="einarparker" content="Odin Project">
 
   <link rel="stylesheet" href="/styles.css?v=1.0">
@@ -36,10 +36,11 @@
     
     #topbar{
         display:flex;
-        width: auto ;
+        width: 100% ;
         height:auto;
         flex-direction: row;
         justify-content: space-between ;
+        align-items: baseline;
     }
 
     #left{
@@ -56,26 +57,68 @@
         
     }
        
-    #footer{
+    .footer{
         display:flex;
-        width: auto ;
-        height: auto;
-        padding:5px;
+        width: 100% ;
+        
+       
         flex-direction: row;
         align-items: end;
         justify-content: space-between;
-        padding-left: 27px;
-        margin-left: 30px;
+        
         color: rgba(0,0,0,.54);
         font-size: 14px;
-        line-height: 40px;
+        line-height:5px;
+        background-color: rgba(207, 207, 207,0.3);
+        
     }
 
-    #input{
+    .input{
         display:flex;
+        margin-top: 40px;
         justify-content: center;
-    }
         
+        
+    }
+    .input input{
+        width: 484px;
+        height: 46px;
+        background-color: white;
+        border-width: 1px;
+        border-color: rgb(202, 202, 202);
+        border-radius: 24px;
+        border-style:solid;
+        order: 2;
+
+    }
+   
+        
+       
+    }
+    .loupe {
+        display:flex;
+        justify-content:center;
+        margin-top:300px
+          
+    
+        
+    
+    }
+
+    .loupe img{
+        width: 25px;
+        height: 25px;
+        opacity: 0.4;
+
+    }
+
+    /*.middle{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-content: center;
+    }
+        */
     .clip {
         clip-path: circle(50%);
             width: 32px;  
@@ -86,6 +129,7 @@
     .logo{
         display:flex;
         justify-content:center;
+        margin-top: 109px;
     }
     #logobox{
         display:flex;
@@ -93,7 +137,7 @@
     }
     #bottom{
         display:flex;
-        width: auto;
+        width: 100%;
         height: 600px;
         justify-content: start;
         align-content: end;
@@ -113,6 +157,17 @@
         margin-left: 30px;
         font-size: 14px;
         color: rgba(0,0,0,.54);
+    }
+
+    .leftB{
+        display:flex;
+        width:30%;
+       justify-content:space-evenly;
+    }
+    .rightB{
+        display:flex;
+        width:30%;
+       justify-content: space-evenly;
     }
     }
 </style>
@@ -137,15 +192,23 @@
             <div id = logobox>
       
                 <img class = logo src="googlelogo.png">
+                <div class = loupe>  
+                    <img src = "loupe.svg">
+        
+                </div>
       
             </div>
             
-
-        <div id = input>
+       
+        <div class = input>
             <input type = text>
-        </div>
+         </div> 
 
-     <div id =bottom>
+
+         
+    
+
+     <div id =bottom></div>
         <div id = countrybox>
             <div id = country>
                 <h6>Country</h6>
@@ -158,16 +221,24 @@
         
        
             
-        <div id = footer>
+        <div class = footer>
             
-
+        <div class = leftB>
         <h6>Advertising</h6>
         <h6>Business</h6>
         <h6>How Search works</h6>
+    </div>
+        <div class = centerB>
         <h6>Carbon neutral since 2007</h6>
+    </div>
+
+        <div class = rightB>
         <h6>Privacy</h6>
         <h6>Terms</h6>
         <h6>Settings</h6>
+    </div>
+
+
         </div>
 
    
