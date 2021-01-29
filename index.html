@@ -16,10 +16,24 @@
 <style>
     h6{
         font-family:arial;
+        font-size :14px;
+        font-weight:lighter;
+        opacity: 0.75;
+    }
+    h5{
+        font-family:arial;
         font-size :13px;
         font-weight:lighter;
-       
+        opacity: 0.75;
     }
+   
+    
+    
+       
+        
+    
+       
+    
     #topbar{
         display:flex;
         width: auto ;
@@ -43,12 +57,18 @@
     }
        
     #footer{
+        display:flex;
         width: auto ;
+        height: auto;
         padding:5px;
         flex-direction: row;
-        justify-content: start;
+        align-items: end;
         justify-content: space-between;
-        display:flex;
+        padding-left: 27px;
+        margin-left: 30px;
+        color: rgba(0,0,0,.54);
+        font-size: 14px;
+        line-height: 40px;
     }
 
     #input{
@@ -60,44 +80,86 @@
         clip-path: circle(50%);
             width: 32px;  
             height: 32px;
-            position:relative;  
+            position:relative;
+              
     }
-    
+    .logo{
+        display:flex;
+        justify-content:center;
+    }
+    #logobox{
+        display:flex;
+        justify-content: center;
+    }
+    #bottom{
+        display:flex;
+        width: auto;
+        height: 600px;
+        justify-content: start;
+        align-content: end;
+        line-height: 20px;
+      
+    }
+    #country{
+        display:flex;
+        justify-content: start;
+        
+        
+    }
+    #countrybox{
+        display: grid;
+        align-content: end;
+        padding-left: 27px;
+        margin-left: 30px;
+        font-size: 14px;
+        color: rgba(0,0,0,.54);
+    }
     }
 </style>
 
 
 <body>
+    <div id = page>
     <div id=topbar>
         <div id=left>
-            <h6>About</h6>
-            <h6>Store</h6>
+            <h5>About</h5>
+            <h5>Store</h5>
         </div>
 
         <div id=right>
-            <h6>Gmail</h6>
-            <h6>Images</h6>
+            <h5>Gmail</h5>
+            <h5>Images</h5>
             <img class = clip src = einar.jpeg>
         </div>
 
 </div>
 
-   
+            <div id = logobox>
       
-     <img src="googlelogo.png">
+                <img class = logo src="googlelogo.png">
       
-        
-       
+            </div>
+            
 
         <div id = input>
-    <input type = text>
+            <input type = text>
         </div>
 
+     <div id =bottom>
+        <div id = countrybox>
+            <div id = country>
+                <h6>Country</h6>
+            </div>
+            </div>
 
+    </div>  <!--bottom end -->
 
-    <footer>
-        <h6>Country</h6>
+    
+        
+       
+            
         <div id = footer>
+            
 
         <h6>Advertising</h6>
         <h6>Business</h6>
@@ -108,7 +170,10 @@
         <h6>Settings</h6>
         </div>
 
-    </footer>
+   
+       
+
+</div>
 
 
 
