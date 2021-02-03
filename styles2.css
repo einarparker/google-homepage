@@ -58,14 +58,12 @@
         
     }
 
-    .input{
-        display:flex;
-        margin-top: 40px;
-        justify-content: center;
+    input{
+        
         
         
     }
-    .input input{
+    /input input{
         width: 484px;
         height: 46px;
         background-color: white;
@@ -80,7 +78,7 @@
         
        
     }
-    .loupe {
+    loupe {
         display:flex;
         justify-content:center;
         margin-top:300px
@@ -90,7 +88,7 @@
     
     }
 
-    .loupe img{
+    loupe img{
         width: 25px;
         height: 25px;
         opacity: 0.4;
@@ -104,14 +102,14 @@
         align-content: center;
     }
         */
-    .clip {
+    clip {
         clip-path: circle(50%);
             width: 32px;  
             height: 32px;
             position:relative;
               
     }
-    .logo{
+    logo{
         display:flex;
         justify-content:center;
         margin-top: 109px;
@@ -144,12 +142,12 @@
         color: rgba(0,0,0,.54);
     }
 
-    .leftB{
+    leftB{
         display:flex;
         width:30%;
        justify-content:space-evenly;
     }
-    .rightB{
+    rightB{
         display:flex;
         width:30%;
        justify-content: space-evenly;

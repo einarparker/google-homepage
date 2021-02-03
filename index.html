@@ -15,30 +15,32 @@
 </head>
 
 <style>
-	viewport{
-		display:block;
-		min-height: 100%;
-		min-width: 99%;
-		position:absolute;
+	*{
+		margin:0;
+		padding:0;
 	}
-
 	.top-nav {
   		display: flex;
 		flex-direction:row;
   		justify-content:center;
   		align-items:center;
 		align-content:center;
-  		font-family: arial, sans-serif;
-		font-size: 13px;
-		font-weight: lighter;
+		padding: 10px 10px;
+  		
+		
+		
 		}
 		
   	.empty0{
 	  flex:1;
     }
 	.menu{
-		padding: 10px;
+		font-family: arial, sans-serif;
+		font-size: 13px;
+		font-weight: lighter;
+		padding: 10px 10px 0px 10px;
 		opacity:0.75
+		
 	}
 	
 	.middle{
@@ -153,17 +155,57 @@
 		}
 			 
 	.bottom{
+		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
+		justify-content:end;
 		
 	}	
-			
+	.footer{
+		margin:none;
+		display:flex;
+		width: 100% ;
+		height: 40px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: rgba(0,0,0,.54);
+        font-size: 14px;
+        line-height:5px;
+		background-color: rgba(207, 207, 207,0.3);
+		
+	}
+	.leftF{
+		display: flex;
+		flex-direction: row;
+	}
+	.rightF{
+		display:flex;
+		flex-direction: row;
+	}
+	.countrybox{
+		margin:none;
+		display:flex;
+		width: 100% ;
+		height: 40px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: rgba(0,0,0,.54);
+        font-size: 14px;
+        line-height:5px;
+		background-color: rgba(207, 207, 207,0.3);
+		border: 1px solid rgb(212, 212, 212)
+		
+
+	}	
 			
 </style>
 
 
 <body>
-        <div class="viewport">
+        
 			<nav class = "top-nav">
 				<div class="menu">About</div>
 				<div class="menu">Store</div>
@@ -190,7 +232,8 @@
 				<div class="sbutton"><button>Google Search</button></div>
 				<div class="sbutton"><button>I'm Feeling Lucky</button></div>
 			</div>
-       		</div> 
+			
+       		
 			
 
          
@@ -199,35 +242,38 @@
      <div class="bottom">
         <div class="countrybox">
             <div class = "country">
-				<ul
-                <li>Country</li>
-			</ul>
+				
+				<div class = "menu">Country</div>
+			
             </div>
         </div>
             
         <div class = "footer">
             
-        <div class="leftF"> <ul>
+        <div class="leftF">
 			
-        <li>Advertising</li>
-        <li>Business</li>
-        <li>How Search works</li>
-	</ul>
+		<div class = "menu">Advertising</div>
+		<div class = "menu">Business</div>
+		<div class = "menu">How Search works</div>
+		</div>
+     
 		
-		<div>
 		
 		
-        <div class = "centerF"><ul>
-        <li>Carbon neutral since 2007</li>
+        <div class = "centerF">
+			<div class = "menu">Carbon neutral since 2007</div>
     	</div>
 
-        <div class = "rightF"><ul>
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Settings</li>
-	</ul>
-    	</div>
+        <div class = "rightF">
+			<div class = "menu">Privacy</div>
+			<div class = "menu">Terms</div>
+			<div class = "menu">Settings</div>
+       
+
+		</div>
+		</div>
 	</div>
+	
 	
   	
 
