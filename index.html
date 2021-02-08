@@ -1,302 +1,264 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Google Search</title>
-  
-  <meta name="einarparker" content="Odin Project">
+    <title>Google Search</title>
 
-  
-  
- 
-
-</head>
-<style>
-	
-	*{
-		margin:0;
-		padding:0;
-	}
-	
-	
-	.top-nav {
-  		display: flex;
-		flex-direction:row;
-  		justify-content:space-between;
-  		align-items:center;
-		align-content:center;
-		padding: 10px 10px 10px 10px;
-  	}
-
-  	.empty0{
-	  flex:1;
+    <meta name="einarparker" content="Odin Project" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
     }
-	.menu{
-		font-family: arial, sans-serif;
-		font-size: 13px;
-		font-weight: lighter;
-		padding: 10px 10px 0px 10px;
-		opacity:0.75
-		
-	}
-	
-	.middle{
-		display: flex;
-		flex-direction:column;
-		justify-content:center;
-		align-items:center;
-		height: 100%;
-		width: 100%;
-		
-		
-	}	
-	.inputwrap{
-		display:flex;
-		justify-content: center;
-		width: 520px;
-		height: 46px;
-		z-index: 3;
-		background-color: transparent;
-        border-width: 1px;
-        border-color: rgb(202, 202, 202);
-        border-radius: 24px;
-        border-style:solid;
-		text-align: justify;
-		font-size: 16px;
-		line-height: 34px;
-		
-	
-		
-	}
-	.inputbox{
-		display: flex;
-		justify-content: center;
-		width: 490px;
-		height: 44px;
-		padding-left: 14px;
-		padding-right: 8px;
-		padding-top: 5px;
-		padding-bottom: 0px;
-		flex-grow: 1;
-		flex-shrink:1;
-	}
-	.inp input{
-		appearance: none;
-		display:flex;
-		cursor: text;
-		outline-style: none;
-		width: 430px;
-        height: 34px;
-		border: none;	
-      }
 
-	  .inputwrap:hover{
-		box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-		border-color: rgba(223, 225, 229, 0);
-	  }
-	.loupewrap{
-		display: flex;
-		align-items: center;
-		width: 33px;
-		height: 44px;
-		padding-right: 20px;
-		margin-top:-5px;
+    .top-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      padding: 10px 10px 10px 10px;
+    }
 
-	}
-	.lupbox{
-		display:block;
-		width:20px;
-		height:26px;
-		margin-top: 9px;
-		margin-bottom: 9px;
-		padding-right:10px;
-	}
-	.loupe{
-		display: inline-block;
-		
-		width: 20px;
-        height: 20px;
-		position: relative;
-	}
-    .loupe img{
-		width: 17px;
-        height: 17px;
-        opacity: 0.4;
-		}
+    .empty0 {
+      flex: 1;
+    }
+    .menu {
+      font-family: arial, sans-serif;
+      font-size: 13px;
+      font-weight: lighter;
+      padding: 10px 10px 0px 10px;
+      opacity: 0.75;
+    }
 
-	.cube{
-		width: 15px;
-		height: 15px;
-		padding-right: 20px;
-		padding-left: 10px;
-		padding-top: 10px;
-	}
-	.logo{
-		padding-top:109px;
-		padding-bottom: 20px;
-		display: flex;
-		width: 272px;
-	
-		
-	}
-	.btn{
-		display: flex;
-		flex-direction:row;
-		
-	}
-	
-	button{
-		font-size: .9em;
-		color:rgb(114, 114, 114);
-		border:none;
-		border-radius: .2em;
-		background-color:#f9f9f9;
-		padding: .9em;
-		margin-top: .9em;
-		margin-right: 1.1em;
-		outline: none;
-		cursor: pointer;
-		box-shadow:0.1em  0.1em  0.1em rgba(0,0,0,0);;
-		border:0.1em solid rgba(212, 212, 212,0);
-		
+    .middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+    .inputwrap {
+      display: flex;
+      justify-content: center;
+      width: 520px;
+      height: 46px;
+      z-index: 3;
+      background-color: transparent;
+      border-width: 1px;
+      border-color: rgb(202, 202, 202);
+      border-radius: 24px;
+      border-style: solid;
+      text-align: justify;
+      font-size: 16px;
+      line-height: 34px;
+    }
+    .inputbox {
+      display: flex;
+      justify-content: center;
+      width: 490px;
+      height: 44px;
+      padding-left: 14px;
+      padding-right: 8px;
+      padding-top: 5px;
+      padding-bottom: 0px;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    .inp input {
+      appearance: none;
+      display: flex;
+      cursor: text;
+      outline-style: none;
+      width: 430px;
+      height: 34px;
+      border: none;
+    }
 
-	}
-	button:hover{	
-      	box-shadow: 0.1em  0.1em  0.1em rgba(0,0,0,0.2);
-		border: 0.1em solid rgb(212, 212, 212);
-		
-	}
-	
-	
+    .inputwrap:hover {
+      box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+      border-color: rgba(223, 225, 229, 0);
+    }
+    .loupewrap {
+      display: flex;
+      align-items: center;
+      width: 33px;
+      height: 44px;
+      padding-right: 20px;
+      margin-top: -5px;
+    }
+    .lupbox {
+      display: block;
+      width: 20px;
+      height: 26px;
+      margin-top: 9px;
+      margin-bottom: 9px;
+      padding-right: 10px;
+    }
+    .loupe {
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+      position: relative;
+    }
+    .loupe img {
+      width: 17px;
+      height: 17px;
+      opacity: 0.4;
+    }
+
+    .cube {
+      width: 15px;
+      height: 15px;
+      padding-right: 20px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    .logo {
+      padding-top: 109px;
+      padding-bottom: 20px;
+      display: flex;
+      width: 272px;
+    }
+    .btn {
+      display: flex;
+      flex-direction: row;
+    }
+
+    button {
+      font-size: 0.9em;
+      color: rgb(114, 114, 114);
+      border: none;
+      border-radius: 0.2em;
+      background-color: #f9f9f9;
+      padding: 0.9em;
+      margin-top: 0.9em;
+      margin-right: 1.1em;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0);
+      border: 0.1em solid rgba(212, 212, 212, 0);
+    }
+    button:hover {
+      box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.2);
+      border: 0.1em solid rgb(212, 212, 212);
+    }
+
     .clip {
-        clip-path: circle(50%);
-            width: 32px;  
-            height: 32px;
-            position:relative;
-			
-		}
-	
-	.country{
-		border: 1px solid rgb(209, 209, 209)
-	}
-	.country{
-		display:flex;
-		width: 100% ;
-		padding-left:10px;
-		padding-bottom: 10px;
-		line-height:20px;
-		font-size: 16px;
-		color: rgba(0,0,0,.6);
-		justify-content: flex-start;
-		align-items: center;
-		background-color: rgba(207, 207, 207,0.3)
-		
+      clip-path: circle(50%);
+      width: 32px;
+      height: 32px;
+      position: relative;
+    }
 
-	}
-	
-	.footer{
-		margin:none;
-		display:flex;
-		flex-direction:row;
-		justify-content: center;
-		padding-top: 10px;
-		width: 100%;
-		min-height: 30px;
-		color: rgba(0,0,0,.6);
-        font-size: 16px;
-        line-height:5px;
-		background-color: rgba(207, 207, 207,0.3);
-		
-		
-		
-	}
-	.leftF{
-		display: flex;
-		flex-direction: row;
-		flex:2;
-		
+    .country {
+      border: 1px solid rgb(209, 209, 209);
+    }
+    .country {
+      display: flex;
+      width: 100%;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      line-height: 20px;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.6);
+      justify-content: flex-start;
+      align-items: center;
+      background-color: rgba(207, 207, 207, 0.3);
+    }
 
-		
-	}
-	.rightF{
-		display:flex;
-		flex-direction: row;
-		padding-right: 10px;
-	
-		
-	}
-	.centerF{
-		flex:2;
-	}
-	
-	.bottom{
-		display: flex;
-		position: fixed;
-		bottom:0;
-		width: 100%;
-		flex-direction: column;
-		justify-content: flex-end;
-	}
-	
+    .footer {
+      margin: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 10px;
+      width: 100%;
+      min-height: 30px;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 16px;
+      line-height: 5px;
+      background-color: rgba(207, 207, 207, 0.3);
+    }
+    .leftF {
+      display: flex;
+      flex-direction: row;
+      flex: 2;
+    }
+    .rightF {
+      display: flex;
+      flex-direction: row;
+      padding-right: 10px;
+    }
+    .centerF {
+      flex: 2;
+    }
 
-	
-</style>
+    .bottom {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  </style>
 
+  <body>
+    <nav class="top-nav">
+      <div class="menu">About</div>
+      <div class="menu">Store</div>
+      <div class="empty0"></div>
+      <div class="menu">Gmail</div>
+      <div class="menu">Images</div>
+      <img class="cube" src="./images/cube.svg" />
+      <a href="https://github.com/einarparker/google-homepage">
+        <img class="clip" src="./images/einar.jpeg"
+      /></a>
+    </nav>
 
-<body>
-        
-			<nav class = "top-nav">
-				<div class="menu">About</div>
-				<div class="menu">Store</div>
-				<div class="empty0"></div>
-				<div class="menu">Gmail</div>
-				<div class="menu">Images</div>
-				<img class="cube" src="./images/cube.svg" />
-				<a href="https://github.com/einarparker/google-homepage"> <img class = "clip" src = "./images/einar.jpeg"></a>
-			</nav>
-			
-			<div class="middle">
-				  <div class = "logo"><img class = logo src="./images/googlelogo.png"></div>
-				  <div class="inputwrap">
-				  <div class="inputbox">
-					<div class="loupewrap">
-						<div class="lupbox">
-							<div class = "loupe"><img src = "./images/loupe.svg"></div>
-							</div>
-						</div>
-				<div class ="inp"><input type = text></div>
-				</div>
-				</div>
-				<div class="btn">
-				<div class="sbutton"><button>Google Search</button></div>
-				<div class="sbutton"><button>I'm Feeling Lucky</button></div>
-			</div>
-		</div>
-			
-       		
-		
+    <div class="middle">
+      <div class="logo"><img class="logo" src="./images/googlelogo.png" /></div>
+      <div class="inputwrap">
+        <div class="inputbox">
+          <div class="loupewrap">
+            <div class="lupbox">
+              <div class="loupe"><img src="./images/loupe.svg" /></div>
+            </div>
+          </div>
+          <div class="inp"><input type="text" /></div>
+        </div>
+      </div>
+      <div class="btn">
+        <div class="sbutton"><button>Google Search</button></div>
+        <div class="sbutton"><button>I'm Feeling Lucky</button></div>
+      </div>
+    </div>
 
-         	<div class="bottom">
-			<div class="country">
-			<div class = "menu">Country</div>
-			</div>
-		 	<div class = "footer">
-			<div class="leftF">
-			<div class = "menu">Advertising</div>
-			<div class = "menu">Business</div>
-			<div class = "menu">How Search works</div>
-			</div>
-     		<div class = "centerF">
-			<div class = "menu">Carbon neutral since 2007</div>
-			</div>
-			<div class = "rightF">
-			<div class = "menu">Privacy</div>
-			<div class = "menu">Terms</div>
-			<div class = "menu">Settings</div>
-       		</div>
-			</div>
-		</div>	
-</body>
+    <div class="bottom">
+      <div class="country">
+        <div class="menu">Country</div>
+      </div>
+      <div class="footer">
+        <div class="leftF">
+          <div class="menu">Advertising</div>
+          <div class="menu">Business</div>
+          <div class="menu">How Search works</div>
+        </div>
+        <div class="centerF">
+          <div class="menu">Carbon neutral since 2007</div>
+        </div>
+        <div class="rightF">
+          <div class="menu">Privacy</div>
+          <div class="menu">Terms</div>
+          <div class="menu">Settings</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
